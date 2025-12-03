@@ -113,6 +113,14 @@ _llm_config_map = {
             'api_key': OPENROUTER_API_KEY  # Use OpenRouter API key
         }
     },
+    'grok-4.1-fast-free-openrouter': {
+        'class': ChatOpenAI,
+        'constructor_params': {
+            'model_name': 'x-ai/grok-4.1-fast:free',
+            'base_url': OPENROUTER_BASE_URL,
+            'api_key': OPENROUTER_API_KEY
+        }
+    },
     # 'llama3.2': {
     #     'class': ChatOllama,
     #     'constructor_params': {'model': 'llama3.2:latest', 'base_url': OLLAMA_BASE_URL}
